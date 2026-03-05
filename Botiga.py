@@ -3,6 +3,8 @@ This module manages product price calculations in a shop,
 applying specific discounts and surcharges based on product type and customer age.
 """
 
+
+
 # Constants to replace "Magic Numbers"
 DISCOUNT_CLOTHING = 0.90      # 10% discount for clothing items
 SURCHARGE_ELECTRONICS = 1.15  # 15% surcharge for electronic items
