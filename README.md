@@ -16,6 +16,35 @@ Originally starting as "dirty code," this project has been professionally refact
    python botiga.py
 
 ## 🛠️ Refactoring Improvements Applied
+
+## Comparison: Before vs After
+### Original "Dirty" Code
+- Variable names were non-descriptive (`p`, `t`, `e`).
+- Used "Magic Numbers" directly in logic.
+- Poorly organized structure.
+
+         def calcular(p, t, e):
+          # p is price, t is product type, e is age
+          res = p
+          if t == "ROBA":
+              res = p * 0.9 # 10% discount
+          elif t == "ELECTRONICA":
+              res = p * 1.15 # 15% surcharge
+          if e < 18:
+              res = res - 5 # youth voucher of 5 euros
+          if res < 0:
+              res = 0
+          print("The total is:")
+          print(res)
+      
+      calcular(100, "ROBA", 15)
+      calcular(200, "ELECTRONICA", 40)
+
+### Refactored Code
+- Used descriptive naming and constants.
+- Applied "Extract Method" for modularity.
+- Added professional Docstrings.
+
 Following the Session 1 requirements, the following "code smells" were fixed:
 
     Meaningful Naming: Renamed generic variables (p, t, e, res) and the main function (calcular) to descriptive names that reveal intent.
