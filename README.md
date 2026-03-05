@@ -15,7 +15,7 @@ Originally starting as "dirty code," this project has been professionally refact
    ```bash
    python botiga.py
 
-##🛠️ Refactoring Improvements Applied
+## 🛠️ Refactoring Improvements Applied
 Following the Session 1 requirements, the following "code smells" were fixed:
 
     Meaningful Naming: Renamed generic variables (p, t, e, res) and the main function (calcular) to descriptive names that reveal intent.
